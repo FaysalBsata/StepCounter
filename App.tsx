@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
-      <RingProgress progress={0.25} />
+      <RingProgress progress={0.4} />
       <View style={styles.values}>
         <Stat label="Steps" value="1200" />
         <Stat label="Distance" value="0,75 KM" />
