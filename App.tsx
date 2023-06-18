@@ -1,15 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-type StatProps = {
-  label: string;
-  value: string;
-};
-const Stat = ({ label, value }: StatProps) => (
-  <View>
-    <Text style={styles.label}>{label}</Text>
-    <Text style={styles.value}>{value}</Text>
-  </View>
-);
+import Stat from './src/components/Stat';
 export default function App() {
   return (
     <View style={styles.container}>
@@ -32,13 +23,4 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   values: { flexDirection: 'row', gap: 25, flexWrap: 'wrap' },
-  label: {
-    color: 'white',
-    fontSize: 20,
-  },
-  value: {
-    fontSize: 35,
-    color: '#AFB3BE',
-    fontWeight: '500',
-  },
 });
