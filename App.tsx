@@ -5,8 +5,7 @@ import RingProgress from './src/components/RingProgress';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <RingProgress progress={0.4} />
+      <RingProgress progress={0.4} strokeWidth={50} radius={150} />
       <View style={styles.values}>
         <Stat label="Steps" value="1200" />
         <Stat label="Distance" value="0,75 KM" />

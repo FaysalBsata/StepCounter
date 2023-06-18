@@ -7,6 +7,7 @@ import Animated, {
   withTiming,
   withSpring,
 } from 'react-native-reanimated';
+import AntDesign from '@expo/vector-icons/AntDesign';
 type RingProgressProps = {
   radius?: number;
   strokeWidth?: number;
@@ -58,6 +59,16 @@ const RingProgress = ({
           {...{ animatedProps }}
         />
       </SVG>
+      <AntDesign
+        name="arrowright"
+        size={strokeWidth * 0.8}
+        color="black"
+        style={{
+          alignSelf: 'center',
+          position: 'absolute',
+          top: strokeWidth * 0.1,
+        }}
+      />
     </View>
   );
 };
