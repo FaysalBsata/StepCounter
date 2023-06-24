@@ -37,7 +37,7 @@ export default function App() {
         radius={150}
       />
       <View style={styles.values}>
-        <Stat label="Steps" value={steps.toFixed(2).toString()} />
+        <Stat label="Steps" value={steps.toFixed(0).toString()} />
         <Stat label="Distance" value={`${(Distance / 1000).toFixed(2)} km`} />
         <Stat label="Flights Climbed" value={Flights.toString()} />
       </View>
